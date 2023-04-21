@@ -153,14 +153,11 @@ section {
     text-align: center;
     height: 20px;
     top: 15px;
-}
-.support-buttons > a:not(.donate){
     margin: 1rem;
     color: black;
     background-color: var(--LIGHT-KOFI-GREY);
     border-radius: 20px;
-    box-shadow: 0 0 0 15px var(--LIGHT-KOFI-GREY)
-
+    box-shadow: 0 0 0 15px var(--LIGHT-KOFI-GREY);
 }
 .support-buttons > a:not(.donate):hover{
     background-color: rgb(208, 204, 204);
