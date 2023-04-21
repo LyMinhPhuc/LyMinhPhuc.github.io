@@ -301,7 +301,7 @@ footer {
     .mobile-header-nav > a:last-child{
         margin-bottom: 1rem;
     }
-    .mobile-header-nav > a{
+    .mobile-header-nav > a {
         margin: 0 1rem;;
         padding: 1rem 0;
         width: 100%;       
@@ -322,7 +322,7 @@ footer {
         background: white;
         top: 9px;
     }
-    .content-wrapper{
+    .content-wrapper {
         display: grid;
         justify-items: center;
         grid-template: 1fr 2fr / 1fr;
