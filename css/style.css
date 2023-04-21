@@ -50,9 +50,10 @@ section {
     margin: 20px auto;
 }
 .background-image {
-    width: 100%;
-    position: relative;
     border-radius: 0 0 25px 25px;
+    max-width: 952px;
+    width: 100%;
+    height: 100%;
 }
 
 .create-account {
@@ -157,7 +158,8 @@ section {
     color: black;
     background-color: var(--LIGHT-KOFI-GREY);
     border-radius: 20px;
-    box-shadow: 0 0 0 15px var(--LIGHT-KOFI-GREY);
+    box-shadow: 0 0 0 15px var(--LIGHT-KOFI-GREY)
+
 }
 .support-buttons > a:not(.donate):hover{
     background-color: rgb(208, 204, 204);
