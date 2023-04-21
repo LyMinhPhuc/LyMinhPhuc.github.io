@@ -25,8 +25,7 @@ header {
     z-index: 100;
 }
 
-a,
-a.visited {
+a, a.visited {
     text-decoration: none;
     color: var(--TEXT-COLOR);
 }
@@ -36,8 +35,7 @@ a.visited {
     text-decoration: none;
 }
 
-.logo,
-.brand {
+.logo, .brand {
     display: inline-block;
     margin-top: 0.5rem;
 }
