@@ -364,7 +364,7 @@ footer {
 .footer-mini-copyright-text {
     display: inline;
     color: hsla(217.5, 13.79%, 22.75%, .6);
-    font-size: 14px;
+    font-size: 10px;
 }
 .footer-mini-text-with-links {
     display: flex;
@@ -378,7 +378,7 @@ footer {
     align-content: center;
     float: left;
     min-height: 1px;
-    font-size: 14px;
+    font-size: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -472,5 +472,9 @@ footer {
     }
     .donate {
         display: none;
+    }
+    .footer-mini-text-with-links {
+    display: flex;
+    flex-direction: column;
     }
 }

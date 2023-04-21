@@ -297,7 +297,7 @@ footer {
 .footer-mini-copyright-text{
     display: inline;
     color: hsla(217.5, 13.79%, 22.75%, .6);
-    font-size: 14px;
+    font-size: 10px;
 }
 .footer-mini-text-with-links {
     display: flex;
@@ -310,7 +310,7 @@ footer {
     justify-content: flex-end;
     align-content: center;
     float: left;
-    font-size: 14px;
+    font-size: 10px;
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px;
@@ -389,6 +389,12 @@ footer {
         top: 9px;
     }
     .description-and-share, .item-image-and-description{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 481px) {
+    .footer-mini-text-with-links {
         display: flex;
         flex-direction: column;
     }
