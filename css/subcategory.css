@@ -122,29 +122,26 @@ section {
 .mobile-header-nav {
     display: none;
 }
+.profile-and-donate,
+.profile-picture-and-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .profile-picture {
     width: fit-content;
     border-radius: 50%;
-    border: 2px solid whitesmoke;
-    box-shadow: 0 0 5px 1px rgb(225, 218, 218);
 
 }
 
 .outer-container {
-    display: block;
+    max-width: 1024px;
     margin: 0 auto;
-    position: relative;
-    transform: translateY(-7%);
-    width: 650px;
-    height: fit-content;
 }
 
-.identity {
-    position: relative;
-    display: inline-flex;
-    flex-direction: row-reverse;
-    left: -9rem;
+.profile-picture>img {
+    border-radius: 125px;
 }
 
 .name {
@@ -153,17 +150,20 @@ section {
 }
 
 .support-buttons {
-    display: inline-block;
-    position: relative;
-    top: -125px;
-    left: 440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: fit-content;
 }
 
-.support-buttons>a {
+.support-buttons>a:not(.donate) {
+    position: relative;
     text-decoration: none;
     display: inline-block;
     font-size: large;
     text-align: center;
+    height: 20px;
+    top: 15px;
 }
 
 .support-buttons>a:not(.donate) {
@@ -182,6 +182,7 @@ section {
 .donate {
     margin: 2rem;
     width: 150px;
+    text-align: center;
     color: whitesmoke;
     background-color: var(--KOFI-RED);
     border-radius: 20px;
@@ -189,11 +190,9 @@ section {
 }
 
 .profile-nav {
-    position: absolute;
-    left: -200px;
-    bottom: 0;
+    min-width: 515px;
+    margin: 1rem 0 1rem 0;
 }
-
 .shop {
     color: var(--KOFI-RED) !important;
 }
@@ -283,7 +282,7 @@ table {
     position: sticky;
     bottom: 0;
     margin: 0 auto;
-    width: 1025px;
+    max-width: 1024px;
     background: white;
     height: 4.5rem;
     border-radius: 10px 10px 0 0;
@@ -508,7 +507,10 @@ footer {
         background: white;
         top: 9px;
     }
-
+    .profile-picture-and-name{
+        display: flex;
+        flex-direction: column;
+    }
     .category {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -520,5 +522,8 @@ footer {
     .category {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .donate {
+        display: none;
     }
 }
