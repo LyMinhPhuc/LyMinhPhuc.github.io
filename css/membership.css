@@ -399,6 +399,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
     }
+    .profile-picture-and-name{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 481px) {
