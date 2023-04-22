@@ -21,6 +21,9 @@ body {
     height: 100vh;
     background: #fefaf9 !important;
 }
+.no-x-scroll {
+    overflow: hidden;
+}
 header {
     height: 4rem;
     position: sticky;

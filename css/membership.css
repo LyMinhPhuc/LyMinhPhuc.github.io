@@ -23,7 +23,9 @@ body, html{
 body {
     height: 100vh;
 }
-
+.no-x-scroll{
+    overflow-x: hidden;
+}
 header {
     height: 4rem;
     position: sticky;
