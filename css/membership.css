@@ -403,6 +403,11 @@ footer {
         column-gap: 20px;
     }
 }
+@media screen and (max-width: 515px) {
+    .outer-container {
+        overflow-x: scroll;
+    }
+}
 
 @media screen and (max-width: 481px) {
     .category {
