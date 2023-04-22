@@ -15,10 +15,13 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
+body,
+html {
+    overflow-x: hidden;
+}
 
 body {
-    height: 100vh;
-    
+    height: 100vh;  
 }
 
 header {

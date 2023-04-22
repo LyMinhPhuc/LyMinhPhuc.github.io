@@ -16,9 +16,12 @@
     font-family: 'Nunito', sans-serif;
 }
 
+body, html{
+    overflow-x: hidden;
+}
+
 body {
     height: 100vh;
-    overflow-x: hidden;
 }
 
 header {
