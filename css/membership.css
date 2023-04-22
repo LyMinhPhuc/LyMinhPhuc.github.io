@@ -186,7 +186,9 @@ section {
 }
 
 .profile-nav {
-    min-width: 515px;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
     margin: 1rem 0 1rem 0;
 }
 
@@ -404,7 +406,7 @@ footer {
     }
 }
 @media screen and (max-width: 515px) {
-    .outer-container {
+    .profile-nav {
         overflow-x: scroll;
     }
 }
