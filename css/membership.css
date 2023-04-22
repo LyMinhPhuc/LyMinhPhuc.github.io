@@ -406,6 +406,13 @@ footer {
         column-gap: 20px;
     }
 }
+@media screen and (max-width: 850px) {
+    .category {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 @media screen and (max-width: 515px) {
     .profile-nav {
         overflow-x: scroll;
@@ -413,14 +420,11 @@ footer {
 }
 
 @media screen and (max-width: 481px) {
-    .category {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .donate{
+    .donate {
         display: none;
     }
-    .footer-mini-text-with-links{
+
+    .footer-mini-text-with-links {
         display: flex;
         flex-direction: column;
     }
