@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,700;1,100&family=Nunito&display=swap');
 
 :root {
-    --KOFI-RED: #ff5f5f;
-    --LIGHTER-KOFI-RED: rgba(255, 95, 95, 0.4);
+    --KOFI-RED: #6c2626;
+    --LIGHTER-KOFI-RED: rgba(155, 55, 55, 0.4);
     --LIGHT-KOFI-GREY: #F7F7F7;
     --GREY-TEXT-COLOR: rgba(25, 32, 37, .6);
     --TEXT-COLOR: #192025;
     --PAYMENT-BORDER: 2px solid #d1d1d1;
-    --BUTTON-BACKGROUND: #00aff1;
+    --BUTTON-BACKGROUND: #04759e;
     --FORM-BORDER: var(--PAYMENT-BORDER);
 }
 
@@ -93,7 +93,7 @@ section {
 
 .start-a-page {
     display: inline-block;
-    background: #00aff1;
+    background: var(--BUTTON-BACKGROUND);
     height: 50px;
     border-radius: 50px;
     padding: 1rem 0rem;
@@ -143,7 +143,7 @@ section {
     background-color: #57f5f2;
     transform: rotate(-30deg);
     bottom: -90px;
-    left: -65px;
+    left: -85px;
 }
 .contact-us-decoration > span{
     display: flex;
@@ -182,14 +182,16 @@ section {
 .contact-us-form > *{
     border-radius: 8px;
 }
-.contact-us-form > input:not(.submit), .form-select{
+.contact-us-form > p{
+    margin: 0 auto;
+}
+.contact-us-form > input:not(.submit,#communication), .form-select{
     margin: 0 auto 2rem auto;
     height: 30px;
     width: 75%;
     border: var(--FORM-BORDER);
     transition: all .5s;
 }
-/* .contact-us-form > input:not(.subject, .detail, .submit){} */
 .contact-us-form :is(input:not(.submit, .reset):hover, select:hover) {
     border: 2px solid rgba(0, 0, 0, 0.9);
     transition: border .3s ease-in-out;
@@ -202,6 +204,15 @@ section {
 }
 .contact-us-form > input:is(.detail)::placeholder{
     transform: translate(5px, -30px);
+}
+.input-and-label{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem auto 0 auto;
+}
+.input-and-label > label{
+    margin-left: 1rem;
+    margin-right: 3rem;
 }
 .submit-and-reset{
     display: flex;

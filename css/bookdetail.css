@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,700;1,100&family=Nunito&display=swap');
 :root {
-    --KOFI-RED: #ff5f5f;
-    --LIGHTER-KOFI-RED: rgba(255, 95, 95, 0.4);
+    --KOFI-RED: #6c2626;
+    --LIGHTER-KOFI-RED: rgba(155, 55, 55, 0.4);
     --LIGHT-KOFI-GREY: #F7F7F7;
     --GREY-TEXT-COLOR: rgba(25, 32, 37, .6);
     --TEXT-COLOR: #192025;
     --PAYMENT-BORDER: 2px solid #d1d1d1;
-    --BUTTON-BACKGROUND: #00aff1;
+    --BUTTON-BACKGROUND: #04759e;
 }
 
 *{
@@ -94,7 +94,7 @@ section {
 
 .start-a-page {
     display: inline-block;
-    background: #00aff1;
+    background: var(--BUTTON-BACKGROUND);
     height: 50px;
     border-radius: 50px;
     padding: 1rem 0rem;
